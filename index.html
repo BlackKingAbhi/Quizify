@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle">🌞 / 🌙</button>
+        <h1 class="quiz-title">Quizify</h1>
+
+        <div id="start-screen" class="screen">
+            <input type="text" id="username-input" placeholder="What's your name?">
+            <button id="start-quiz-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div id="quiz-card">
+                <div class="quiz-card-inner">
+                    <div class="quiz-card-front">
+                        <p id="question-number" class="question-number"></p>
+                        <h2 id="question" class="question"></h2>
+                        <div id="options-container" class="options-container"></div>
+                        <p id="feedback" class="feedback"></p>
+                        <button id="next-question-btn" class="hidden">Next Question</button>
+                    </div>
+                    <div class="quiz-card-back">
+                        <!-- Back side can be left blank or styled later -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2 class="result-title">Quiz Over!</h2>
+            <p id="final-score" class="final-score"></p>
+            <h3 class="leaderboard-title">Leader Board</h3>
+            <ul id="leaderboard-list" class="leaderboard-list"></ul>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
